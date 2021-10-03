@@ -1,0 +1,151 @@
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+ * {
+	 box-sizing: border-box;
+}
+ html {
+	 height: 100%;
+}
+ body {
+	 position: relative;
+	 height: 100%;
+     width: 100%;
+	 padding: 8%;
+	 margin: 0;
+	 background-color: #88c388 !important;
+} 
+ main {
+	 width: 100%;
+	 max-width: 600px;
+	 margin: auto;
+	 padding: 24px;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size: 18px;
+	 line-height: 22px;
+	 background: white;
+	 border-radius: 8px;
+	 box-shadow: rgba(0, 0, 0, 0.2) 0 20px 20px -12px;
+}
+ p {
+	 font-size: 14px;
+	 margin-bottom: 24px;
+}
+ form > div {
+	 display: block;
+	 margin-bottom: 24px;
+}
+ form > div input {
+	 width: 100%;
+	 margin-bottom: 6px;
+}
+ @media (min-width: 440px) {
+	 form > div {
+		 display: flex;
+	}
+	 form > div input {
+		 width: auto;
+		 flex-grow: 2;
+		 margin-right: 6px;
+		 margin-bottom: 0;
+	}
+}
+ button {
+	 padding: 12px 20px;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size: 14px;
+	 text-transform: uppercase;
+	 border: none;
+	 background: #66b266;
+	 color: white;
+	 box-shadow: inset #3c763c 0 -2px 0;
+	 cursor: pointer;
+	 outline: none;
+	 transition: background-color 0.2s ease-out;
+	 border-radius: 0;
+}
+ button:disabled {
+	 background: #e6e6e6;
+	 box-shadow: inset #d9d9d9 0 -2px 0;
+}
+ button:disabled:hover {
+	 background: #e6e6e6;
+}
+ button:hover {
+	 background: #55a955;
+}
+ button:active {
+	 box-shadow: inset #448744 0 0 0;
+	 transform: translateY(2px);
+}
+ input {
+	 padding: 10px;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size: 18px;
+	 outline: none;
+	 border: 1px solid #ededed;
+	 transition: border 0.2s ease-out;
+	 border-radius: 0;
+	 box-shadow: none;
+}
+input.placeholder {
+	 color: #d9d9d9;
+	 transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+ input:-moz-placeholder {
+	 color: #d9d9d9;
+	 transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+ input::-moz-placeholder {
+	 color: #d9d9d9;
+	 transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+ input::-webkit-input-placeholder {
+	 color: #d9d9d9;
+	 transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+ input:focus {
+	 border: 1px solid #66b266;
+}
+
+ input:focus.placeholder {
+	 opacity: 0;
+	 transform: translateX(12px);
+}
+ input:focus:-moz-placeholder {
+	 opacity: 0;
+	 transform: translateX(12px);
+}
+ input:focus::-moz-placeholder {
+	 opacity: 0;
+	 transform: translateX(12px);
+}
+
+ input:focus::-webkit-input-placeholder {
+	 opacity: 0;
+	 transform: translateX(12px);
+}
+ input[type="checkbox"] {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 margin: auto;
+}
+ ul {
+	 margin: 0 0 24px;
+	 border-top: 1px solid #ededed;
+}
+ ul li {
+	 color: #3c763c;
+	 position: relative;
+	 padding: 16px 24px 16px 0;
+	 background: white;
+	 border-bottom: 1px solid #ededed;
+	 transition: color 0.1s ease-out;
+}
+ ul li span {
+	 display: block;
+}
+ 

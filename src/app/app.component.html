@@ -1,0 +1,14 @@
+
+
+<main ng-app="TaskList" ng-controller="taskController" >
+  <form name="form" >
+    <div>
+      <input id="in" type="text" name="task" placeholder="Add a new task"  required="required" [(ngModel)]="inputText" [ngModelOptions]="{standalone: true}"/>
+      <button (click)="addTask()">Add task</button>
+    </div>
+  </form>
+  <app-list [myTasks]="tasks"></app-list>
+  
+</main>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,8 @@
+<ul style="list-style: none;">
+    <li *ngFor="let task of myTasks; let i = index" [ngClass]="{ 'text-decoration-line-through': task.checked }"> <span>{{ task.name}}
+        <input [id]="'check' + i"  type="checkbox" (click)="crossText(i)"/>
+    </span></li>
+</ul>
+
+<p *ngIf="myTasks.length == 0">All tasks have been completed.</p>
+<button (click)="removeCompletedTasks()">Clear completed tasks</button>
